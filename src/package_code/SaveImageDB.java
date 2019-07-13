@@ -18,16 +18,17 @@ public class SaveImageDB {
     public static service getservice(){
         return service1;
     }
-    
-    public static void main(String[] args) throws SQLException {
+    public static void init() throws SQLException{
         MysqlDataSource dataSource = new MysqlDataSource();
         dataSource.setUser("root");
         dataSource.setPassword("");
         dataSource.setServerName("localhost");
         dataSource.setDatabaseName("gui_image"); 
         
-        service1= new service(dataSource);
-        
+        service1= new service(dataSource);        
+    }
+    public static void main(String[] args) throws SQLException {
+        init();
         new JFrameDesign().setVisible(true);
     }
 }

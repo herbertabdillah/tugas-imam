@@ -30,6 +30,7 @@ public class JFrameDesign extends javax.swing.JFrame {
     File file;
     JFileChooser jfc;
     public JFrameDesign() throws SQLException {
+        SaveImageDB.init();
         initComponents();
         initTable();
     }
