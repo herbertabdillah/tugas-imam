@@ -47,7 +47,7 @@ public class JFrameDesign extends javax.swing.JFrame {
                 Image image = toolkit.getImage(path+"/image/"+contoh1.getImage());
                 Image imagedResized=image.getScaledInstance(252, 289, Image.SCALE_DEFAULT);
                 ImageIcon icon = new ImageIcon(imagedResized);
-                gambarItem.setIcon(icon);
+                tempatGambar.setIcon(icon);
             } catch(IOException ex){
                 Logger.getLogger(JFrameDesign.class.getName()).log(Level.SEVERE, null, ex);
             }
