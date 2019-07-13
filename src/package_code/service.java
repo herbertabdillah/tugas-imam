@@ -37,6 +37,7 @@ public class service {
             connection.setAutoCommit(true);
         } catch(SQLException exception){
             try{
+                exception.printStackTrace();
                 connection.rollback();
             } catch(SQLException ex){
                 ex.printStackTrace();
